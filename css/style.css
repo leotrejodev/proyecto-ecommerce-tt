@@ -1,0 +1,232 @@
+/* COLORES PARA LA PAGINA */
+/* "b74f6f","adbdff","3185fc","34e5ff" */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    /* line-height: 1.5; */
+    /* por defecto */
+    font-size: 1.6rem;
+
+    background: #b74f6f;
+    color: #fff2fb;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2rem;
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Playwrite US Modern", cursive;
+    color: #34e5ff;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+h2 {
+    font-family: "Playwrite US Modern", cursive;
+    color: #adbdff;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.btn {
+    background: #f7d932;
+    color: #2a1e35;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1.6rem;
+    border-radius: 1rem;
+}
+
+header, footer {
+    background-color: #3185fc;
+    color: #fff2fb;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    justify-content: space-around;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+.footer-nav i.fa-brands {
+    font-size: 2.8rem;
+    color: #fff2fb;
+} 
+
+/* --------- LOGO DE LA TIENDA -------- */
+.div-log {
+    margin-left: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.logo, .header-nav ul li a {
+    text-decoration: none;
+    font-size: 2rem;
+
+    color: inherit;
+    display: inline-block;
+    padding: 1rem;
+}
+
+.header-nav {
+    margin-right: 2rem;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+/* --------- HOME --------- */
+.titulo-home {
+    margin: 3rem 0;
+}
+
+.titulo-productos {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.parrafo {
+    width: 80%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem;
+}
+
+/* ------------ TARJETAS ------------ */
+.contenedor-tarjetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card {
+    background: #34e5ff;
+    background: linear-gradient(90deg, rgba(255, 103, 38, 1) 23%, rgba(0, 212, 255, 1) 100%);
+    color: #2a1e35;
+
+    width: 30rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.card img {
+    width: 100%;
+}
+
+/* -------------- PAGINA CONTACTO -------------- */
+.titulo-contacto {
+    margin: 2rem 0;
+}
+
+.form-contacto {
+    width: 100%;
+    max-width: 65rem;
+    font-size: 2rem;
+    padding: 3rem;
+    margin: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2.6rem;
+    padding: 2rem;
+}
+
+.group legend {
+    color: #f7d932;
+}
+
+.grupo-input input, 
+.grupo-input textarea {
+    border: none;
+    background-color: transparent;
+    border-bottom: solid 3px #34e5ff;
+    margin: 0 2rem;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.boton-contacto {
+    display: flex;
+    justify-content: center;
+    gap: 0 2rem;
+}
+
+/* --------- MEDIA QUERIES --------- */
+
+@media (max-width:768px) {
+    header, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    header .div-log,
+    .header-nav {
+        margin: 0;
+    }
+
+    .contenedor-tarjetas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
