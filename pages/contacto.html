@@ -1,66 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- FUENTES DE LOS TEXTOS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<!-- ICONOS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ICONOS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Contacto -Tienda LT</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
     <header>
-        <!-- NO NECESITA SEMANTICA -->
-        <div class="div-log"><a class="logo" href="../index.html">TIENDA LT</a></div>
-        <nav class="header-nav">
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
+      <!-- NO NECESITA SEMANTICA -->
+      <div class="div-log">
+        <a class="logo" href="../index.html">TIENDA LT</a>
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="../index.html">INICIO</a></li>
+          <li><a href="./contacto.html">CONTACTO</a></li>
+        </ul>
+      </nav>
     </header>
-   
-    <main>
-        <h1 class="titulo-contacto">Contacto con Tienda LT</h1>
-        <p class="parrafo">Por favor, deje sus datos para que podamos contactarnos a la brevedad.</p>
 
-        <form class="form-contacto" action="https://formspree.io/f/mandldvk" method="post">
-          
-          <fieldset class="group">
+    <main>
+      <h1 class="titulo-contacto">Contacto con Tienda LT</h1>
+      <p class="parrafo">
+        Por favor, deje sus datos para que podamos contactarnos a la brevedad.
+      </p>
+
+      <form
+        class="form-contacto"
+        action="https://formspree.io/f/mandldvk"
+        method="post"
+      >
+        <fieldset class="group">
           <legend>Información Personal</legend>
           <div class="grupo-input">
-              <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" name="nombre" required>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
           </div>
           <div class="grupo-input">
-              <label for="email">Correo Electrónico:</label>
-              <input type="email" id="email" name="email" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required />
           </div>
-          </fieldset>
+        </fieldset>
 
-          <fieldset class="group" >
+        <fieldset class="group">
           <legend>Motivo y Mensaje</legend>
-            <div class="grupo-input">
-              <label for="motivo">Motivo:</label>
-              <select id="motivo" name="motivo">
-                <option value="">-- Seleccioná una opción --</option>
-                <option value="consulta">Consulta</option>
-                <option value="soporte">Soporte</option>
-                <option value="otros">Otros</option>
-              </select>
-            </div>
-            <div class="grupo-input">
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" cols="30" required></textarea>
-            </div>
-          </fieldset>
+          <div class="grupo-input">
+            <label for="motivo">Motivo:</label>
+            <select id="motivo" name="motivo">
+              <option value="">-- Seleccioná una opción --</option>
+              <option value="consulta">Consulta</option>
+              <option value="soporte">Soporte</option>
+              <option value="otros">Otros</option>
+            </select>
+          </div>
+          <div class="grupo-input">
+            <label for="mensaje">Mensaje:</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              cols="auto"
+              required
+            ></textarea>
+          </div>
+        </fieldset>
 
-  <!-- Campo oculto para redirección -->
-  <!-- <input type="hidden" name="_redirect" value="https://tusitio.com/gracias.html"> -->
+        <!-- Campo oculto para redirección -->
+        <!-- <input type="hidden" name="_redirect" value="https://tusitio.com/gracias.html"> -->
 
         <section class="boton-contacto">
           <button class="btn" type="submit">Enviar</button>
@@ -68,14 +90,22 @@
         </section>
       </form>
     </main>
-    <footer><p>Seguinos en nuestras redes sociales</p>
-<!-- barra de navegacion para redes sociales con datos de ecommerce -->
-        <nav class="footer-nav">
-            <ul>
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-            </ul>
-        </nav></footer>
-</body>
+    <footer>
+      <p>Seguinos en nuestras redes sociales</p>
+      <!-- barra de navegacion para redes sociales con datos de ecommerce -->
+      <nav class="footer-nav">
+        <ul>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>

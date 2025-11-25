@@ -1,91 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- FUENTES DE LOS TEXTOS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<!-- ICONOS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FUENTES DE LOS TEXTOS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ICONOS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Proyecto Ecommerce Talento Tech</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <header>
-        <!-- NO NECESITA SEMANTICA -->
-        <div class="div-log"><a class="logo" href="./index.html">TIENDA LT</a></div>
-        <nav class="header-nav">
-            <ul>
-                <li><a href="./index.html">INICIO</a></li>
-                <li><a href="./pages/contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
+      <!-- NO NECESITA SEMANTICA -->
+      <div class="div-log">
+        <a class="logo" href="./index.html">TIENDA LT</a>
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="./index.html">INICIO</a></li>
+          <li><a href="./pages/contacto.html">CONTACTO</a></li>
+          <li>
+            <a href="./pages/carrito.html" class="carrito-icono"
+              ><i class="fa-solid fa-cart-shopping"></i>
+              <span class="contador-carrito">0</span></a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <h1 class="titulo-home">tituto principal de ecommerce</h1>
-        <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla praesentium similique, porro non tempore dignissimos laboriosam adipisci! Minus, ad minima aliquid, laudantium debitis incidunt saepe suscipit quos, ratione illo fuga?</p>
-        <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore illum iusto ex expedita earum autem odio velit quis debitis facere reprehenderit iste error ratione, cum cupiditate corrupti. Repellendus, dolores ducimus.</p>
+      <h1 class="titulo-home">Tienda online de ropa con nombres</h1>
+      <p class="parrafo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+        praesentium similique, porro non tempore dignissimos laboriosam
+        adipisci! Minus, ad minima aliquid, laudantium debitis incidunt saepe
+        suscipit quos, ratione illo fuga?
+      </p>
+      <p class="parrafo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore illum
+        iusto ex expedita earum autem odio velit quis debitis facere
+        reprehenderit iste error ratione, cum cupiditate corrupti. Repellendus,
+        dolores ducimus.
+      </p>
 
-        <section>
-            <h2 class="titulo-productos">Aquí veran algunos de nuestros productos.</h2>
-            <div class="contenedor-tarjetas">
-                <article class="card">
-                    <img src="./img/geoffroy-danest-0fG6zACWGJY-unsplash.jpg" alt="service1">
-                    <h3>Producto 1</h3>
-                    <p>Precio = $1000</p>
-                    <button class="btn">Agregar al carrito</button>
-                </article>
+      <section>
+        <h2 class="titulo-productos">
+          Aquí veran algunos de nuestros productos.
+        </h2>
+        <div class="contenedor-tarjetas" id="contenedor-tarjetas">
+          <!-- <article class="card">
+            <img
+              src="./img/geoffroy-danest-0fG6zACWGJY-unsplash.jpg"
+              alt="service1"
+            />
+            <h3>Producto 1</h3>
+            <p>Precio = $1000</p>
+            <button class="btn">Agregar al carrito</button>
+          </article>
 
-                <article class="card">
-                    <img src="./img/keagan-henman-Wz6wIwsr5yc-unsplash.jpg" alt="service2">
-                    <h3>Producto 2</h3>
-                    <p>Precio = $1200</p>
-                    <button class="btn">Agregar al carrito</button>
-                </article>
+          <article class="card">
+            <img
+              src="./img/keagan-henman-Wz6wIwsr5yc-unsplash.jpg"
+              alt="service2"
+            />
+            <h3>Producto 2</h3>
+            <p>Precio = $1200</p>
+            <button class="btn">Agregar al carrito</button>
+          </article>
 
-                <article class="card">
-                    <img src="./img/mediamodifier-F5i3PZXYkvY-unsplash.jpg" alt="service3">
-                    <h3>Producto 3</h3>
-                    <p>Precio = $1300</p>
-                    <button class="btn">Agregar al carrito</button>
-                </article>
+          <article class="card">
+            <img
+              src="./img/mediamodifier-F5i3PZXYkvY-unsplash.jpg"
+              alt="service3"
+            />
+            <h3>Producto 3</h3>
+            <p>Precio = $1300</p>
+            <button class="btn">Agregar al carrito</button>
+          </article>
 
-                <article class="card">
-                    <img src="./img/robert-richman-vcTKFYNZop4-unsplash.jpg" alt="service4">
-                    <h3>Producto 4</h3>
-                    <p>Precio = $1400</p>
-                    <button class="btn">Agregar al carrito</button>
-                </article>
+          <article class="card">
+            <img
+              src="./img/robert-richman-vcTKFYNZop4-unsplash.jpg"
+              alt="service4"
+            />
+            <h3>Producto 4</h3>
+            <p>Precio = $1400</p>
+            <button class="btn">Agregar al carrito</button>
+          </article>
 
-                <article class="card">
-                    <img src="./img/tuananh-blue-tVK3anV3oR0-unsplash.jpg" alt="service5">
-                    <h3>Producto 5</h3>
-                    <p>Precio = $1600</p>
-                    <button class="btn">Agregar al carrito</button>
-                </article>
+          <article class="card">
+            <img
+              src="./img/tuananh-blue-tVK3anV3oR0-unsplash.jpg"
+              alt="service5"
+            />
+            <h3>Producto 5</h3>
+            <p>Precio = $1600</p>
+            <button class="btn">Agregar al carrito</button>
+          </article>
 
-                <article class="card">
-                    <img src="./img/tuananh-blue-0VAlyu7j5wE-unsplash.jpg" alt="service6">
-                    <h3>Producto 6</h3>
-                    <p>Precio = $2000</p>
-                    <button class="btn">Agregar al carrito</button>
-                </article>
-            </div>
-        </section>
+          <article class="card">
+            <img
+              src="./img/tuananh-blue-0VAlyu7j5wE-unsplash.jpg"
+              alt="service6"
+            />
+            <h3>Producto 6</h3>
+            <p>Precio = $2000</p>
+            <button class="btn">Agregar al carrito</button>
+          </article>
+          <article class="card">
+            <img
+              src="./img/tuananh-blue-3h-390a18dE-unsplash.jpg"
+              alt="service6"
+            />
+            <h3>Producto 7</h3>
+            <p>Precio = $2100</p>
+            <button class="btn">Agregar al carrito</button>
+          </article> -->
+        </div>
+      </section>
     </main>
     <footer>
-        <p>Seguinos en nuestras redes sociales</p>
-<!-- barra de navegacion para redes sociales con datos de ecommerce -->
-        <nav class="footer-nav">
-            <ul>
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-            </ul>
-        </nav>
+      <p>Seguinos en nuestras redes sociales</p>
+      <!-- barra de navegacion para redes sociales con datos de ecommerce -->
+      <nav class="footer-nav">
+        <ul>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </li>
+        </ul>
+      </nav>
     </footer>
-
-</body>
+    <script type="module" src="./js/index.js"></script>
+  </body>
 </html>
