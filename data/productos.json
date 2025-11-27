@@ -1,0 +1,37 @@
+[
+  {
+    "nombre": "Pavillon",
+    "img": "img/geoffroy-danest-0fG6zACWGJY-unsplash.jpg",
+    "precio": 1000
+  },
+  {
+    "nombre": "Grace Chapel",
+    "img": "img/keagan-henman-Wz6wIwsr5yc-unsplash.jpg",
+    "precio": 1200
+  },
+  {
+    "nombre": "White",
+    "img": "img/mediamodifier-F5i3PZXYkvY-unsplash.jpg",
+    "precio": "1300"
+  },
+  {
+    "nombre": "Blue",
+    "img": "img/robert-richman-vcTKFYNZop4-unsplash.jpg",
+    "precio": 1400
+  },
+  {
+    "nombre": "Simple",
+    "img": "img/tuananh-blue-tVK3anV3oR0-unsplash.jpg",
+    "precio": 1600
+  },
+  {
+    "nombre": "Blook",
+    "img": "img/tuananh-blue-0VAlyu7j5wE-unsplash.jpg",
+    "precio": 1500
+  },
+  {
+    "nombre": "Connect",
+    "img": "img/tuananh-blue-3h-390a18dE-unsplash.jpg",
+    "precio": 2000
+  }
+]
